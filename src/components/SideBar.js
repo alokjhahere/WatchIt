@@ -1,6 +1,10 @@
-
+import { useSelector } from "react-redux";
 
 const SideBar = () => {
+
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+
+  if(!isMenuOpen) return null
   return (
     <div className="p-4 w-1/8 shadow-lg">
       <ul className="m-2">
