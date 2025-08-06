@@ -23552,6 +23552,7 @@ var _mainContainer = require("./MainContainer");
 var _mainContainerDefault = parcelHelpers.interopDefault(_mainContainer);
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sideBarDefault.default), {}, void 0, false, {
                 fileName: "src/components/Body.js",
@@ -23711,7 +23712,7 @@ $RefreshReg$(_c, "SideBar");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-redux":"hbNxT"}],"6iHZJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-redux":"hbNxT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6iHZJ":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$2b92 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$2b92.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -23724,10 +23725,27 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _buttonList = require("./ButtonList");
+var _buttonListDefault = parcelHelpers.interopDefault(_buttonList);
+var _videoContainer = require("./VideoContainer");
+var _videoContainerDefault = parcelHelpers.interopDefault(_videoContainer);
 const MainContainer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonListDefault.default), {}, void 0, false, {
+                fileName: "src/components/MainContainer.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _videoContainerDefault.default), {}, void 0, false, {
+                fileName: "src/components/MainContainer.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/MainContainer.js",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -23737,6 +23755,114 @@ var _c;
 $RefreshReg$(_c, "MainContainer");
 
   $parcel$ReactRefreshHelpers$2b92.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./ButtonList":"eYaGf","./VideoContainer":"9PawU","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"eYaGf":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$0e18 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$0e18.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0e18.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _button = require("./Button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+const ButtonList = ()=>{
+    const buttonArray = [
+        "All",
+        "React",
+        "Software",
+        "Engineering",
+        "Full-stack"
+    ];
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: buttonArray.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                name: item
+            }, void 0, false, {
+                fileName: "src/components/ButtonList.js",
+                lineNumber: 8,
+                columnNumber: 33
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/components/ButtonList.js",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ButtonList;
+exports.default = ButtonList;
+var _c;
+$RefreshReg$(_c, "ButtonList");
+
+  $parcel$ReactRefreshHelpers$0e18.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Button":"4mmXM"}],"4mmXM":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$4c62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$4c62.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4c62.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Button = ({ name })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+        className: "bg-gray-200 m-2 px-3 py-2 rounded-lg font-medium",
+        children: name
+    }, void 0, false, {
+        fileName: "src/components/Button.js",
+        lineNumber: 4,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Button;
+exports.default = Button;
+var _c;
+$RefreshReg$(_c, "Button");
+
+  $parcel$ReactRefreshHelpers$4c62.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9PawU":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3ab4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$3ab4.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3ab4.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const VideoContainer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+        fileName: "src/components/VideoContainer.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = VideoContainer;
+exports.default = VideoContainer;
+var _c;
+$RefreshReg$(_c, "VideoContainer");
+
+  $parcel$ReactRefreshHelpers$3ab4.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;

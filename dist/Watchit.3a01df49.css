@@ -45,10 +45,14 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-gray-100: oklch(96.7% .003 264.542);
+    --color-gray-200: oklch(92.8% .006 264.531);
     --color-gray-300: oklch(87.2% .01 258.338);
     --color-gray-400: oklch(70.7% .022 261.325);
     --spacing: .25rem;
     --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --radius-lg: .5rem;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
@@ -369,8 +373,16 @@
     margin: calc(var(--spacing) * 2);
   }
 
+  .mx-3 {
+    margin-inline: calc(var(--spacing) * 3);
+  }
+
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
+  }
+
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
   }
 
   .block {
@@ -437,6 +449,10 @@
     grid-auto-flow: column;
   }
 
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+
   .rounded-l-full {
     border-top-left-radius: 3.40282e38px;
     border-bottom-left-radius: 3.40282e38px;
@@ -456,8 +472,20 @@
     border-color: var(--color-gray-400);
   }
 
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+
   .bg-gray-300 {
     background-color: var(--color-gray-300);
+  }
+
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
 
   .p-1 {
@@ -472,12 +500,25 @@
     padding: calc(var(--spacing) * 4);
   }
 
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+
   .pr-3 {
     padding-right: calc(var(--spacing) * 3);
   }
 
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
+  }
+
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
 
   .font-medium {
